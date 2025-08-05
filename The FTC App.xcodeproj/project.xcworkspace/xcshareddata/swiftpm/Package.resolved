@@ -1,0 +1,15 @@
+{
+  "originHash" : "278e1c5902e0dee26a51feac5160710fbf3ffe33c0b7cd190139258d9a9069be",
+  "pins" : [
+    {
+      "identity" : "swiftc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Slingshot-20240/swiftc",
+      "state" : {
+        "branch" : "dev",
+        "revision" : "3b94925159d21746584cfbf9fc525ee509ffefc3"
+      }
+    }
+  ],
+  "version" : 3
+}

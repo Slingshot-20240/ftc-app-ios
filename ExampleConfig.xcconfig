@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  The FTC App
+//
+//  Created by Jining Liu on 8/4/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+DEVELOPMENT_TEAM=
+PRODUCT_BUNDLE_IDENTIFIER=

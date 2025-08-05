@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E40936CC2E41AF2000696783 /* SwiFTC in Frameworks */ = {isa = PBXBuildFile; productRef = E40936CB2E41AF2000696783 /* SwiFTC */; };
+		E48C52192E41AB5D009FF6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48C52152E41AB5D009FF6CC /* Assets.xcassets */; };
+		E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52162E41AB5D009FF6CC /* ContentView.swift */; };
+		E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52172E41AB5D009FF6CC /* FTCApp.swift */; };
+		E48C521E2E41AB5F009FF6CC /* The_FTC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C521C2E41AB5F009FF6CC /* The_FTC_AppTests.swift */; };
+		E48C52222E41AB63009FF6CC /* The_FTC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C521F2E41AB63009FF6CC /* The_FTC_AppUITests.swift */; };
+		E48C52232E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52202E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift */; };
+		E48C524A2E41AC40009FF6CC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E48C52492E41AC40009FF6CC /* Config.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E48C51F92E41AB57009FF6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48C51E32E41AB56009FF6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E48C51EA2E41AB56009FF6CC;
+			remoteInfo = "The FTC App";
+		};
+		E48C52032E41AB57009FF6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48C51E32E41AB56009FF6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E48C51EA2E41AB56009FF6CC;
+			remoteInfo = "The FTC App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E48C51EB2E41AB56009FF6CC /* The FTC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The FTC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48C51F82E41AB57009FF6CC /* The FTC AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48C52022E41AB57009FF6CC /* The FTC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48C52152E41AB5D009FF6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E48C52162E41AB5D009FF6CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E48C52172E41AB5D009FF6CC /* FTCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTCApp.swift; sourceTree = "<group>"; };
+		E48C521C2E41AB5F009FF6CC /* The_FTC_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_FTC_AppTests.swift; sourceTree = "<group>"; };
+		E48C521F2E41AB63009FF6CC /* The_FTC_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_FTC_AppUITests.swift; sourceTree = "<group>"; };
+		E48C52202E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_FTC_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E48C52492E41AC40009FF6CC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E48C51E82E41AB56009FF6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40936CC2E41AF2000696783 /* SwiFTC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C51F52E41AB57009FF6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C51FF2E41AB57009FF6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E48C51E22E41AB56009FF6CC = {
+			isa = PBXGroup;
+			children = (
+				E48C52492E41AC40009FF6CC /* Config.xcconfig */,
+				E48C52182E41AB5D009FF6CC /* The FTC App */,
+				E48C521D2E41AB5F009FF6CC /* The FTC AppTests */,
+				E48C52212E41AB63009FF6CC /* The FTC AppUITests */,
+				E48C51EC2E41AB56009FF6CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E48C51EC2E41AB56009FF6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E48C51EB2E41AB56009FF6CC /* The FTC App.app */,
+				E48C51F82E41AB57009FF6CC /* The FTC AppTests.xctest */,
+				E48C52022E41AB57009FF6CC /* The FTC AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48C52182E41AB5D009FF6CC /* The FTC App */ = {
+			isa = PBXGroup;
+			children = (
+				E48C52172E41AB5D009FF6CC /* FTCApp.swift */,
+				E48C52162E41AB5D009FF6CC /* ContentView.swift */,
+				E48C52152E41AB5D009FF6CC /* Assets.xcassets */,
+			);
+			path = "The FTC App";
+			sourceTree = "<group>";
+		};
+		E48C521D2E41AB5F009FF6CC /* The FTC AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E48C521C2E41AB5F009FF6CC /* The_FTC_AppTests.swift */,
+			);
+			path = "The FTC AppTests";
+			sourceTree = "<group>";
+		};
+		E48C52212E41AB63009FF6CC /* The FTC AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E48C521F2E41AB63009FF6CC /* The_FTC_AppUITests.swift */,
+				E48C52202E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift */,
+			);
+			path = "The FTC AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E48C51EA2E41AB56009FF6CC /* The FTC App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48C520C2E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC App" */;
+			buildPhases = (
+				E48C51E72E41AB56009FF6CC /* Sources */,
+				E48C51E82E41AB56009FF6CC /* Frameworks */,
+				E48C51E92E41AB56009FF6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The FTC App";
+			packageProductDependencies = (
+				E40936CB2E41AF2000696783 /* SwiFTC */,
+			);
+			productName = "The FTC App";
+			productReference = E48C51EB2E41AB56009FF6CC /* The FTC App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E48C51F72E41AB57009FF6CC /* The FTC AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48C520F2E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC AppTests" */;
+			buildPhases = (
+				E48C51F42E41AB57009FF6CC /* Sources */,
+				E48C51F52E41AB57009FF6CC /* Frameworks */,
+				E48C51F62E41AB57009FF6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E48C51FA2E41AB57009FF6CC /* PBXTargetDependency */,
+			);
+			name = "The FTC AppTests";
+			packageProductDependencies = (
+			);
+			productName = "The FTC AppTests";
+			productReference = E48C51F82E41AB57009FF6CC /* The FTC AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E48C52012E41AB57009FF6CC /* The FTC AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48C52122E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC AppUITests" */;
+			buildPhases = (
+				E48C51FE2E41AB57009FF6CC /* Sources */,
+				E48C51FF2E41AB57009FF6CC /* Frameworks */,
+				E48C52002E41AB57009FF6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E48C52042E41AB57009FF6CC /* PBXTargetDependency */,
+			);
+			name = "The FTC AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "The FTC AppUITests";
+			productReference = E48C52022E41AB57009FF6CC /* The FTC AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E48C51E32E41AB56009FF6CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E48C51EA2E41AB56009FF6CC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E48C51F72E41AB57009FF6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E48C51EA2E41AB56009FF6CC;
+					};
+					E48C52012E41AB57009FF6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E48C51EA2E41AB56009FF6CC;
+					};
+				};
+			};
+			buildConfigurationList = E48C51E62E41AB56009FF6CC /* Build configuration list for PBXProject "The FTC App" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E48C51E22E41AB56009FF6CC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E40936CA2E41AF1F00696783 /* XCRemoteSwiftPackageReference "swiftc" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E48C51EC2E41AB56009FF6CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E48C51EA2E41AB56009FF6CC /* The FTC App */,
+				E48C51F72E41AB57009FF6CC /* The FTC AppTests */,
+				E48C52012E41AB57009FF6CC /* The FTC AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E48C51E92E41AB56009FF6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48C524A2E41AC40009FF6CC /* Config.xcconfig in Resources */,
+				E48C52192E41AB5D009FF6CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C51F62E41AB57009FF6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C52002E41AB57009FF6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E48C51E72E41AB56009FF6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */,
+				E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C51F42E41AB57009FF6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48C521E2E41AB5F009FF6CC /* The_FTC_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48C51FE2E41AB57009FF6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48C52222E41AB63009FF6CC /* The_FTC_AppUITests.swift in Sources */,
+				E48C52232E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E48C51FA2E41AB57009FF6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E48C51EA2E41AB56009FF6CC /* The FTC App */;
+			targetProxy = E48C51F92E41AB57009FF6CC /* PBXContainerItemProxy */;
+		};
+		E48C52042E41AB57009FF6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E48C51EA2E41AB56009FF6CC /* The FTC App */;
+			targetProxy = E48C52032E41AB57009FF6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E48C520A2E41AB57009FF6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E48C520B2E41AB57009FF6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48C520D2E41AB57009FF6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FTC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E48C520E2E41AB57009FF6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FTC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E48C52102E41AB57009FF6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.theftc.The-FTC-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The FTC App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The FTC App";
+			};
+			name = Debug;
+		};
+		E48C52112E41AB57009FF6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.theftc.The-FTC-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The FTC App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The FTC App";
+			};
+			name = Release;
+		};
+		E48C52132E41AB57009FF6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.theftc.The-FTC-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The FTC App";
+			};
+			name = Debug;
+		};
+		E48C52142E41AB57009FF6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7MYA5Q926;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.theftc.The-FTC-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The FTC App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E48C51E62E41AB56009FF6CC /* Build configuration list for PBXProject "The FTC App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48C520A2E41AB57009FF6CC /* Debug */,
+				E48C520B2E41AB57009FF6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48C520C2E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48C520D2E41AB57009FF6CC /* Debug */,
+				E48C520E2E41AB57009FF6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48C520F2E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48C52102E41AB57009FF6CC /* Debug */,
+				E48C52112E41AB57009FF6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48C52122E41AB57009FF6CC /* Build configuration list for PBXNativeTarget "The FTC AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48C52132E41AB57009FF6CC /* Debug */,
+				E48C52142E41AB57009FF6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E40936CA2E41AF1F00696783 /* XCRemoteSwiftPackageReference "swiftc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Slingshot-20240/swiftc";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E40936CB2E41AF2000696783 /* SwiFTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E40936CA2E41AF1F00696783 /* XCRemoteSwiftPackageReference "swiftc" */;
+			productName = SwiFTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E48C51E32E41AB56009FF6CC /* Project object */;
+}
