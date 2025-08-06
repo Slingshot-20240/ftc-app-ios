@@ -1,12 +1,7 @@
-<h1 align="center">📱 The FTC App 🤖</h1>
+# 📱 The iOS FTC App 🤖
 
-<h6 align="center">for iOS & iPadOS</h6>
-
-<p align="center">
-  One app for <b>everything</b> FTC
-  <br />
-  presented by 20240 Slingshot
-</p>
+One app for **everything** FTC.  
+presented by **20240 Slingshot**
 
 > [!NOTE]
 > 🚧 This project is in early development. Please check back for more information.

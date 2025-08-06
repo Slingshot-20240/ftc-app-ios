@@ -14,7 +14,6 @@
 		E48C521E2E41AB5F009FF6CC /* The_FTC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C521C2E41AB5F009FF6CC /* The_FTC_AppTests.swift */; };
 		E48C52222E41AB63009FF6CC /* The_FTC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C521F2E41AB63009FF6CC /* The_FTC_AppUITests.swift */; };
 		E48C52232E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52202E41AB63009FF6CC /* The_FTC_AppUITestsLaunchTests.swift */; };
-		E48C524A2E41AC40009FF6CC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E48C52492E41AC40009FF6CC /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,7 +191,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					E48C51EA2E41AB56009FF6CC = {
 						CreatedOnToolsVersion = 16.4;
@@ -236,7 +235,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48C524A2E41AC40009FF6CC /* Config.xcconfig in Resources */,
 				E48C52192E41AB5D009FF6CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +357,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -416,6 +415,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -423,11 +423,13 @@
 		};
 		E48C520D2E41AB57009FF6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48C52492E41AC40009FF6CC /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FTC;
@@ -452,11 +454,13 @@
 		};
 		E48C520E2E41AB57009FF6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48C52492E41AC40009FF6CC /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FTC;
@@ -597,8 +601,9 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Slingshot-20240/swiftc";
 			requirement = {
-				branch = dev;
-				kind = branch;
+				kind = versionRange;
+				maximumVersion = 2.0.0;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
