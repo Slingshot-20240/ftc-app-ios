@@ -6,12 +6,41 @@
 //
 
 import SwiftUI
+import SwiFTC
 
 @main
 struct FTCApp: App {
+    @State private var search: String = ""
+    
+    @AppStorage("selectedFtcSeason") private var selectedFtcSeason: FTCSeason =
+        .decode
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView(search: $search)
+                    .searchable(
+                        text: $search,
+                        prompt: Text("Search events, teams, and news")
+                    )
+                    .navigationTitle(selectedFtcSeason.nameWithTrademark)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button("", systemImage: "gear") {
+                                // TODO: - Settings
+                            }
+                            .labelStyle(.iconOnly)
+                        }
+
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Button("", systemImage: "wrench.and.screwdriver") {
+                                // TODO: - Tools
+                            }
+                            .labelStyle(.iconOnly)
+                        }
+                    }
+            }
         }
     }
 }

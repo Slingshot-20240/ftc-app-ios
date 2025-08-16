@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E40936CC2E41AF2000696783 /* SwiFTC in Frameworks */ = {isa = PBXBuildFile; productRef = E40936CB2E41AF2000696783 /* SwiFTC */; };
+		E445E3002E46776E008E7943 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445E2FF2E46776A008E7943 /* User.swift */; };
+		E468E8EE2E504CAC0027A2D0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468E8ED2E504CAC0027A2D0 /* News.swift */; };
+		E468E8F02E504EE50027A2D0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468E8EF2E504EE50027A2D0 /* Tag.swift */; };
 		E48C52192E41AB5D009FF6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48C52152E41AB5D009FF6CC /* Assets.xcassets */; };
 		E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52162E41AB5D009FF6CC /* ContentView.swift */; };
 		E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52172E41AB5D009FF6CC /* FTCApp.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E445E2FF2E46776A008E7943 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E468E8ED2E504CAC0027A2D0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		E468E8EF2E504EE50027A2D0 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		E48C51EB2E41AB56009FF6CC /* The FTC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The FTC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C51F82E41AB57009FF6CC /* The FTC AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C52022E41AB57009FF6CC /* The FTC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,9 @@
 			children = (
 				E48C52172E41AB5D009FF6CC /* FTCApp.swift */,
 				E48C52162E41AB5D009FF6CC /* ContentView.swift */,
+				E445E2FF2E46776A008E7943 /* User.swift */,
+				E468E8ED2E504CAC0027A2D0 /* News.swift */,
+				E468E8EF2E504EE50027A2D0 /* Tag.swift */,
 				E48C52152E41AB5D009FF6CC /* Assets.xcassets */,
 			);
 			path = "The FTC App";
@@ -262,6 +271,9 @@
 			files = (
 				E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */,
 				E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */,
+				E468E8F02E504EE50027A2D0 /* Tag.swift in Sources */,
+				E468E8EE2E504CAC0027A2D0 /* News.swift in Sources */,
+				E445E3002E46776E008E7943 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

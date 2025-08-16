@@ -37,7 +37,7 @@ Rename [`ExampleConfig.xcconfig`](./ExampleConfig.xcconfig) to `Config.xcconfig`
 
 In the left sidebar, navigate to `The FTC App (top-level .xcodeproj) > Targets > The FTC App > Build Settings > All > Development Team`, single click (select) the line, and press `delete` (`backspace`) on your keyboard. Repeat for key `Product Bundle Identifier`
 
-> [!CAUTION] > **NEVER** update your development team or bundle identifier in the Xcode GUI, **only** use the `Config.xcconfig` file to avoid pushing your project-specific configuration to GitHub.
+> [!CAUTION] **NEVER** update your development team or bundle identifier in the Xcode GUI, **only** use the `Config.xcconfig` file to avoid pushing your project-specific configuration to GitHub.
 
 You're done! Head to the `Signing & Capabilities` section on the "The FTC App" target page to make sure your development team and bundle identifier have been set correctly.
 
@@ -45,9 +45,9 @@ You're done! Head to the `Signing & Capabilities` section on the "The FTC App" t
 
 ### Disclaimer
 
-This application is an independent project developed by FTC Team 20240 Slingshot and open-source contributors. It is not affiliated with, endorsed by, or officially connected to *FIRST*® (For Inspiration and Recognition of Science and Technology), the *FIRST*® Tech Challenge (FTC), Qualcomm, RTX (Raytheon Technologies), or any other sponsors, partners, or affiliates of these organizations.
+**_FIRST®, FIRST® Tech Challenge, FTC®, FIRST® RISE℠, SKYSTONE℠, FIRST® GAME CHANGERS℠, ULTIMATE GOAL℠, FIRST® FORWARD℠, FREIGHT FRENZY℠, FIRST® ENERGIZE℠, POWERPLAY℠, FIRST® IN SHOW℠, CENTERSTAGE℠, FIRST® DIVE℠, INTO THE DEEP℠, FIRST® AGE™, DECODE™, and all accompanying logos as they are created, are trademarks of For Inspiration and Recognition of Science and Technology (FIRST®) (www.firstinspires.org). These trademarks are used by special permission of FIRST which is not overseeing, involved with, or responsible for this activity, product, or service. © 2025 FIRST®. Used by special permission. All rights reserved._**
 
-All names, brands, and content referenced are the intellectual property of their respective owners. Their use in this application is solely for identification purposes and does not imply endorsement.
+FTC API services: https://ftc-events.firstinspires.org/services/API
 
 ### Licenses
 
