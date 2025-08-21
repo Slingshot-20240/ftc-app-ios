@@ -5,23 +5,23 @@
 //  Created by Jining Liu on 8/4/25.
 //
 
-import SwiftUI
 import SwiFTC
+import SwiftUI
 
 @main
 struct FTCApp: App {
     @State private var search: String = ""
-    
+
     @AppStorage("selectedFtcSeason") private var selectedFtcSeason: FTCSeason =
         .decode
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 ContentView(search: $search)
                     .searchable(
                         text: $search,
-                        prompt: Text("Search events, teams, and news")
+                        prompt: "Search events, teams, and news"
                     )
                     .navigationTitle(selectedFtcSeason.nameWithTrademark)
                     .navigationBarTitleDisplayMode(.inline)

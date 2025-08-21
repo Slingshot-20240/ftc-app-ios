@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-enum Tag: Codable {
+enum Tag: Codable, Hashable {
     case firstHq
+    case ftc
     case s
     case lm
     case lt
@@ -40,7 +41,9 @@ enum Tag: Codable {
     var tag: String {
         switch self {
         case .firstHq:
-            "FIRST HQ"
+            "*FIRST* HQ"
+        case .ftc:
+            "FTC"
         case .s:
             "S"
         case .lm:
@@ -63,7 +66,9 @@ enum Tag: Codable {
     var description: String {
         switch self {
         case .firstHq:
-            "FIRST HQ"
+            "_FIRST_ HQ"
+        case .ftc:
+            "*FIRST* Tech Challenge"
         case .s:
             "Scrimmage"
         case .lm:
@@ -85,7 +90,7 @@ enum Tag: Codable {
 
     var foregroundColor: Color {
         switch self {
-        case .firstHq, .s, .lm, .lt, .qt, .sq, .ic, .cmp, .custom(_, _):
+        case .firstHq, .ftc, .s, .lm, .lt, .qt, .sq, .ic, .cmp, .custom(_, _):
             .white
         }
     }
@@ -96,7 +101,7 @@ enum Tag: Codable {
             .red
         case .s, .lm, .lt, .qt, .sq, .ic, .cmp:
             .blue
-        case .custom(_, _):
+        case .ftc, .custom(_, _):
             .orange
         }
     }

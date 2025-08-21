@@ -11,6 +11,10 @@
 		E445E3002E46776E008E7943 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445E2FF2E46776A008E7943 /* User.swift */; };
 		E468E8EE2E504CAC0027A2D0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468E8ED2E504CAC0027A2D0 /* News.swift */; };
 		E468E8F02E504EE50027A2D0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468E8EF2E504EE50027A2D0 /* Tag.swift */; };
+		E47977C32E56F27800F79857 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47977C22E56F27800F79857 /* Logger.swift */; };
+		E47977C52E56F64100F79857 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47977C42E56F64100F79857 /* NewsView.swift */; };
+		E47977C72E56FBD300F79857 /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47977C62E56FBD300F79857 /* NewsArticleView.swift */; };
+		E47977C92E56FCFA00F79857 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47977C82E56FCFA00F79857 /* WebView.swift */; };
 		E48C52192E41AB5D009FF6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48C52152E41AB5D009FF6CC /* Assets.xcassets */; };
 		E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52162E41AB5D009FF6CC /* ContentView.swift */; };
 		E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C52172E41AB5D009FF6CC /* FTCApp.swift */; };
@@ -40,6 +44,10 @@
 		E445E2FF2E46776A008E7943 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E468E8ED2E504CAC0027A2D0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E468E8EF2E504EE50027A2D0 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		E47977C22E56F27800F79857 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E47977C42E56F64100F79857 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		E47977C62E56FBD300F79857 /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
+		E47977C82E56FCFA00F79857 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E48C51EB2E41AB56009FF6CC /* The FTC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The FTC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C51F82E41AB57009FF6CC /* The FTC AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C52022E41AB57009FF6CC /* The FTC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FTC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +112,13 @@
 			children = (
 				E48C52172E41AB5D009FF6CC /* FTCApp.swift */,
 				E48C52162E41AB5D009FF6CC /* ContentView.swift */,
+				E47977C42E56F64100F79857 /* NewsView.swift */,
+				E47977C62E56FBD300F79857 /* NewsArticleView.swift */,
+				E47977C82E56FCFA00F79857 /* WebView.swift */,
 				E445E2FF2E46776A008E7943 /* User.swift */,
 				E468E8ED2E504CAC0027A2D0 /* News.swift */,
 				E468E8EF2E504EE50027A2D0 /* Tag.swift */,
+				E47977C22E56F27800F79857 /* Logger.swift */,
 				E48C52152E41AB5D009FF6CC /* Assets.xcassets */,
 			);
 			path = "The FTC App";
@@ -270,8 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48C521A2E41AB5D009FF6CC /* ContentView.swift in Sources */,
+				E47977C32E56F27800F79857 /* Logger.swift in Sources */,
 				E48C521B2E41AB5D009FF6CC /* FTCApp.swift in Sources */,
+				E47977C52E56F64100F79857 /* NewsView.swift in Sources */,
+				E47977C72E56FBD300F79857 /* NewsArticleView.swift in Sources */,
 				E468E8F02E504EE50027A2D0 /* Tag.swift in Sources */,
+				E47977C92E56FCFA00F79857 /* WebView.swift in Sources */,
 				E468E8EE2E504CAC0027A2D0 /* News.swift in Sources */,
 				E445E3002E46776E008E7943 /* User.swift in Sources */,
 			);

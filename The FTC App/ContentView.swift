@@ -15,78 +15,7 @@ struct ContentView: View {
 
     @AppStorage("user") private var user: User = .init(testing: true)
 
-    @State private var news: [News] = [
-        .init(
-            id: 3,
-            title: "FTC Team Blast",
-            description:
-                "Collecting Feedback from the *FIRST* Tech Challenge Community",
-            tags: [.firstHq],
-            markdown: nil,
-            url: .init(string: "https://info.firstinspires.org/ftc-05-22-25"),
-            date: ({
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy-MM-dd"
-                return formatter
-            })().date(from: "2025-05-22")!
-        ),
-        .init(
-            id: 2,
-            title: "FTC Team Blast",
-            description:
-                """
-                - Waitlist Opportunities for Premier Events!
-                - Happy Teacher Appreciation Week
-                - Off-season Events
-                - AndyMark Game Set Orders
-                - Celebrate FIRST Signing Day - May 20
-                """,
-            tags: [.firstHq],
-            markdown: nil,
-            url: .init(string: "https://info.firstinspires.org/ftc-05-08-25"),
-            date: ({
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy-MM-dd"
-                return formatter
-            })().date(from: "2025-05-08")!
-        ),
-        .init(
-            id: 1,
-            title: "FTC Team Blast",
-            description:
-                """
-                - Waitlist Opportunities for Premier Events!
-                - Celebrating FIRST Championship
-                - Thank You for an Incredible Season
-                - National Advocacy Conference 2025
-                """,
-            tags: [.firstHq],
-            markdown: nil,
-            url: .init(string: "https://info.firstinspires.org/ftc-05-01-25"),
-            date: ({
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy-MM-dd"
-                return formatter
-            })().date(from: "2025-05-01")!
-        ),
-        .init(
-            id: 0,
-            title: "FTC Team Blast",
-            description:
-                """
-                - Upcoming FIRST Dashboard Maintenance
-                - Team Roster access during Dashboard maintenance
-                """,
-            tags: [.firstHq],
-            markdown: nil,
-            url: .init(string: "https://info.firstinspires.org/ftc-04-10-25"),
-            date: ({
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy-MM-dd"
-                return formatter
-            })().date(from: "2025-04-10")!
-        ),
-    ]
+    @State private var news: [News] = []
 
     @State private var attending: [FTCAPIV2Data.EventListings.Event] =
         try!
@@ -113,7 +42,20 @@ struct ContentView: View {
         try! JSONDecoder().decode(
             [FTCAPIV2Data.TeamListings.Team].self,
             from:
-                "[{\"teamNumber\":20240,\"displayTeamNumber\":\"20240\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Slingshot\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2021,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"},{\"teamNumber\":17315,\"displayTeamNumber\":\"17315\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Tomahawk\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2019,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"},{\"teamNumber\":17113,\"displayTeamNumber\":\"17113\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Hunga Munga\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2019,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"},{\"teamNumber\":18886,\"displayTeamNumber\":\"18886\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Boomerang\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2020,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"}]"
+                "[{\"teamNumber\":20240,\"displayTeamNumber\":\"20240\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Slingshot\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2021,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"},{\"teamNumber\":17315,\"displayTeamNumber\":\"17315\",\"nameFull\":\"Texas Workforce Commission&Westwood High School\",\"nameShort\":\"Tomahawk\",\"city\":\"Austin\",\"stateProv\":\"TX\",\"country\":\"USA\",\"rookieYear\":2019,\"homeRegion\":\"USTX\",\"displayLocation\":\"Austin, TX, USA\"}]"
+                .data(using: .utf8)!
+        )
+
+    @State private var trendingEvents: [FTCAPIV2Data.EventListings.Event] =
+        try!
+        ({
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return decoder
+        })().decode(
+            [FTCAPIV2Data.EventListings.Event].self,
+            from:
+                "[{\"eventId\":\"3\",\"code\":\"USTXCGLT\",\"divisionCode\":null,\"name\":\"FiT-Central GEMS League Tournament\",\"remote\":false,\"hybrid\":false,\"fieldCount\":2,\"published\":true,\"type\":\"3\",\"typeName\":\"League Tournament\",\"regionCode\":\"USTX\",\"leagueCode\":\"CG\",\"districtCode\":null,\"venue\":null,\"address\":null,\"city\":null,\"stateprov\":null,\"country\":null,\"website\":null,\"liveStreamUrl\":null,\"coordinates\":null,\"webcasts\":null,\"timezone\":null,\"dateStart\":\"2026-01-24T06:00:00Z\",\"dateEnd\":\"2026-01-24T06:00:00Z\"},{\"type\":\"6\",\"published\":true,\"districtCode\":\"\",\"typeName\":\"FIRST Championship\",\"venue\":\"George R. Brown Convention Center\",\"fieldCount\":1,\"timezone\":\"America\\/Chicago\",\"website\":\"https:\\/\\/www.firstchampionship.org\\/\",\"liveStreamUrl\":\"\",\"coordinates\":{\"coordinates\":[-95.35802,29.7522],\"type\":\"Point\"},\"eventId\":\"08786e70-ca59-9241-ae48-8de7b9e296dc\",\"hybrid\":false,\"address\":\"1001 Avenida De Las Americas\",\"country\":\"USA\",\"stateprov\":\"TX\",\"name\":\"FIRST Championship - FIRST Tech Challenge\",\"city\":\"Houston\",\"dateEnd\":\"2026-04-19T06:00:00Z\",\"code\":\"FTCCMP1\",\"regionCode\":\"CMPZ2\",\"dateStart\":\"2025-04-15T06:00:00Z\",\"remote\":false}]"
                 .data(using: .utf8)!
         )
 
@@ -127,27 +69,75 @@ struct ContentView: View {
                 followingSection
             }
 
-            trendingTeamsSection
+            trendingSection
                 .onChange(of: isSearching) { val in
                     print(val)
                 }
 
             newsSection
-            
-            if !isSearching {
-                Section {
-                } footer: {
-                    Text(
+
+            Section {
+            } header: {
+                VStack(alignment: .leading) {
+                    Text("The FTC App")
+                    Text("presented by 20240 Slingshot")
+                        .font(.subheadline)
+                }
+            } footer: {
+                Text(
                     """
                     Team and event data provided by the [FTC API](https://ftc-events.firstinspires.org/services/API).
-                    
+
+                    Trending teams and events are updated hourly, based on in-app search popularity over the last 24 hours.
+
                     Sources for news and other data can be found on GitHub at [Slingshot-20240/ftc-app-data](https://github.com/Slingshot-20240/ftc-app-data).
-                    
+
+                    *FIRST*®, *FIRST*® Tech Challenge, FTC®, *FIRST*® RISE℠, SKYSTONE℠, *FIRST*® GAME CHANGERS℠, ULTIMATE GOAL℠, *FIRST*® FORWARD℠, FREIGHT FRENZY℠, *FIRST*® ENERGIZE℠, POWERPLAY℠, *FIRST*® IN SHOW℠, CENTERSTAGE℠, *FIRST*® DIVE℠, INTO THE DEEP℠, *FIRST*® AGE™, DECODE™, and all accompanying logos as they are created, are trademarks of For Inspiration and Recognition of Science and Technology (*FIRST*®) (www.firstinspires.org). These trademarks are used by special permission of *FIRST* which is not overseeing, involved with, or responsible for this activity, product, or service. © 2025 *FIRST*®. Used by special permission. All rights reserved.
+
+                    © 2025 FTC Team 20240 Slingshot and contributors.
+                    Licensed under the MIT License.
+
                     """
-                    )
-                }
+                )
+            }
+            .headerProminence(.increased)
+        }
+        .navigationDestination(for: NavigationPage.self) { page in
+            switch page {
+            case .news:
+                NewsView(news: $news, reload: loadNews)
             }
         }
+        .navigationDestination(for: News.self) { news in
+            NewsArticleView(news: news)
+        }
+        .onAppear {
+            loadNews()
+        }
+    }
+
+    func loadNews() {
+        URLSession.shared.dataTask(
+            with: .init(
+                url: .init(string: "https://data.theftc.app/news.json")!
+            )
+        ) { data, response, error in
+            guard let data else {
+                Logger.count()
+                return
+            }
+
+            do {
+                let news = try JSONDecoder().decode([News].self, from: data)
+
+                withAnimation {
+                    self.news = news
+                }
+            } catch {
+                Logger.error("\(error)")
+            }
+        }
+        .resume()
     }
 
     var welcomeSection: some View {
@@ -161,7 +151,7 @@ struct ContentView: View {
                                     team.displayTeamNumber
                                         ?? String(team.teamNumber)
                                 )
-                                .font(.title)
+                                .font(.title2)
                                 .fontWeight(.semibold)
                                 .fontDesign(.monospaced)
 
@@ -175,7 +165,7 @@ struct ContentView: View {
 
                             if let name = team.nameShort ?? team.nameFull {
                                 Text(name)
-                                    .font(.title2)
+                                    .font(.title)
                                     .fontWeight(.semibold)
                             }
                         }
@@ -202,7 +192,7 @@ struct ContentView: View {
     var attendingSection: some View {
         Section {
             ForEach(attending, id: \.eventId) { event in
-                NavigationLink(value: 0) {
+                NavigationLink(value: event) {
                     VStack(alignment: .leading) {
                         Text(
                             event.dateStart.formatted(
@@ -283,10 +273,10 @@ struct ContentView: View {
         .headerProminence(.increased)
     }
 
-    var trendingTeamsSection: some View {
+    var trendingSection: some View {
         Section {
             ForEach(trendingTeams, id: \.teamNumber) { team in
-                NavigationLink(value: 0) {
+                NavigationLink(value: team) {
                     VStack(alignment: .leading) {
                         HStack {
                             Text(
@@ -333,8 +323,46 @@ struct ContentView: View {
                     }
                 }
             }
+
+            ForEach(trendingEvents, id: \.eventId) { event in
+                NavigationLink(value: 0) {
+                    VStack(alignment: .leading) {
+                        Text(
+                            event.dateStart.formatted(
+                                date: .long,
+                                time: .omitted
+                            )
+                        )
+                        .font(.subheadline)
+
+                        HStack {
+                            Text(event.code ?? "???")
+                                .font(.headline)
+
+                            if let typeString = event.type,
+                                let type = Int(typeString),
+                                let typeName = event.typeName
+                            {
+                                Tag(
+                                    eventType: type,
+                                    eventTypeName: typeName
+                                )
+                                .label
+                            }
+
+                            if let region = event.regionCode {
+                                Tag.custom(region, event.address ?? region)
+                                    .label
+                            }
+                        }
+
+                        Text(event.name ?? "???")
+                            .font(.subheadline)
+                    }
+                }
+            }
         } header: {
-            Label("Trending Teams", systemImage: "chart.line.uptrend.xyaxis")
+            Label("Trending", systemImage: "chart.line.uptrend.xyaxis")
         }
         .headerProminence(.increased)
     }
@@ -342,7 +370,7 @@ struct ContentView: View {
     var newsSection: some View {
         Section {
             ForEach(news[0..<min(news.count, 3)]) { news in
-                NavigationLink(value: 0) {
+                NavigationLink(value: news) {
                     VStack(alignment: .leading) {
                         HStack {
                             Text(
@@ -358,7 +386,7 @@ struct ContentView: View {
                             }
                         }
 
-                        Text(news.title)
+                        Text(.init(news.title))
                             .font(.headline)
 
                         if let description = news.description {
@@ -383,13 +411,17 @@ struct ContentView: View {
             }
 
             if news.count > 3 {
-                NavigationLink("More News", destination: EmptyView())
+                NavigationLink("More News", value: NavigationPage.news)
             }
         } header: {
             Label("News", systemImage: "newspaper")
         }
         .headerProminence(.increased)
     }
+}
+
+enum NavigationPage: Hashable {
+    case news
 }
 
 @available(iOS 17.0, *)

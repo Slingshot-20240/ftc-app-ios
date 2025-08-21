@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct News: Identifiable, Codable {
+struct News: Identifiable, Codable, Hashable {
     let id: Int
     let title: String
     let description: String?
     let tags: [Tag]
     let markdown: String?
-    let url: URL?
+    let url: URL
     let date: Date
 }
